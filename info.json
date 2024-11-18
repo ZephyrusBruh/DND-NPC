@@ -1,0 +1,310 @@
+
+{
+    "classes": {
+        "Artificer":{
+            "ac": 16,
+            "hp": 8,
+            "str":-1,
+            "dex":2,
+            "con":2,
+            "int":3,
+            "wis":1,
+            "cha":0
+        },
+        "Barbarian":{
+            "ac": 14,
+            "hp": 8,
+            "str":3,
+            "dex":2,
+            "con":2,
+            "int":-1,
+            "wis":0,
+            "cha":1
+        },
+        "Bard": {
+            "ac": 13,
+            "hp": 8,
+            "str":0,
+            "dex":2,
+            "con":1,
+            "int":1,
+            "wis":1,
+            "cha":3
+        },
+        "BloodHunter":{
+            "ac": 14,
+            "hp": 8,
+            "str":4,
+            "dex":1,
+            "con":2,
+            "int":-1,
+            "wis":3,
+            "cha":0
+        },
+        "Cleric":{
+            "ac": 15,
+            "hp": 8,
+            "str":1,
+            "dex":1,
+            "con":2,
+            "int":0,
+            "wis":3,
+            "cha":1
+        },
+        "Druid":{
+            "ac": 13,
+            "hp": 8,
+            "str":0,
+            "dex":2,
+            "con":2,
+            "int":1,
+            "wis":3,
+            "cha":0
+        },
+        "Fighter":{
+            "ac": 14,
+            "hp": 10,
+            "str":1,
+            "dex":3,
+            "con":3,
+            "int":1,
+            "wis":1,
+            "cha":0
+        },
+        "Monk":{
+            "ac": 16,
+            "hp": 8,
+            "str":0,
+            "dex":3,
+            "con":1,
+            "int":1,
+            "wis":3,
+            "cha":-1
+        },
+        "Paladin":{
+            "ac": 16,
+            "hp": 10,
+            "str":3,
+            "dex":-1,
+            "con":3,
+            "int":0,
+            "wis":1,
+            "cha":2
+        },
+        "Ranger":{
+            "ac": 14,
+            "hp": 10,
+            "str":0,
+            "dex":3,
+            "con":2,
+            "int":1,
+            "wis":2,
+            "cha":0
+        },
+        "Rouge":{
+            "ac": 14,
+            "hp": 8,
+            "str":0,
+            "dex":3,
+            "con":1,
+            "int":0,
+            "wis":2,
+            "cha":2
+        },
+        "Sorcerer":{
+            "ac": 12,
+            "hp": 6,
+            "str":-1,
+            "dex":2,
+            "con":3,
+            "int":0,
+            "wis":1,
+            "cha":3
+        },
+        "Warlock":{
+            "ac": 13,
+            "hp": 8,
+            "str":-1,
+            "dex":2,
+            "con":2,
+            "int":0,
+            "wis":1,
+            "cha":3
+        },
+        "Wizard":{
+            "ac": 12,
+            "hp": 6,
+            "str":-1,
+            "dex":2,
+            "con":2,
+            "int":3,
+            "wis":2,
+            "cha":0
+        }
+        
+    },
+    "races":{
+        "human":{
+            "hp":1,
+            "str":1,
+            "dex":1,
+            "con":1,
+            "int":1,
+            "wis":1,
+            "cha":1
+        },
+        "halfling":{
+            "hp": 0,
+            "str":0,
+            "dex":0,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":1
+        },
+        "dragonborn":{
+            "hp":0,
+            "str":2,
+            "dex":0,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":1
+        },
+        "aarakocra":{
+            "hp":0,
+            "str":0,
+            "dex":2,
+            "con":0,
+            "int":0,
+            "wis":1,
+            "cha":0
+        },
+        "deepGnome":{
+            "hp":0,
+            "str":0,
+            "dex":1,
+            "con":0,
+            "int":2,
+            "wis":0,
+            "cha":0
+        },
+        "rockGnome":{
+            "hp":0,
+            "str":0,
+            "dex":0,
+            "con":1,
+            "int":2,
+            "wis":0,
+            "cha":0
+        },
+        "airGenasi":{
+            "hp":0,
+            "str":0,
+            "dex":1,
+            "con":2,
+            "int":0,
+            "wis":0,
+            "cha":0
+        },
+        "earthGenasi":{
+            "hp":0,
+            "str":1,
+            "dex":0,
+            "con":2,
+            "int":0,
+            "wis":0,
+            "cha":0
+        },
+        "fireGenasi":{
+            "hp":0,
+            "str":0,
+            "dex":0,
+            "con":2,
+            "int":1,
+            "wis":0,
+            "cha":0
+        },
+        "waterGenasi":{
+            "hp":0,
+            "str":0,
+            "dex":0,
+            "con":2,
+            "int":0,
+            "wis":1,
+            "cha":0
+        },
+        "goliath":{
+            "hp":0,
+            "str":2,
+            "dex":0,
+            "con":1,
+            "int":0,
+            "wis":0,
+            "cha":0
+        },
+        "hillDwarf":{
+            "hp": 1,
+            "str":0,
+            "dex":0,
+            "con":2,
+            "int":0,
+            "wis":1,
+            "cha":0
+        },
+        "mountainDwarf":{
+            "hp": 0,
+            "str":2,
+            "dex":0,
+            "con":2,
+            "int":0,
+            "wis":0,
+            "cha":0
+        },
+        "highElf":{
+            "hp": 0,
+            "str":0,
+            "dex":2,
+            "con":0,
+            "int":1,
+            "wis":0,
+            "cha":0
+        },
+        "woodElf":{
+            "hp": 0,
+            "str":0,
+            "dex":2,
+            "con":0,
+            "int":0,
+            "wis":1,
+            "cha":0
+        },
+        "halfElf":{
+            "hp": 0,
+            "str":0,
+            "dex":1,
+            "con":1,
+            "int":0,
+            "wis":0,
+            "cha":2
+        },
+        "halfOrc":{
+            "hp": 0,
+            "str":2,
+            "dex":0,
+            "con":1,
+            "int":0,
+            "wis":0,
+            "cha":0
+        },
+        "tiefling":{
+            "hp": 0,
+            "str":0,
+            "dex":0,
+            "con":0,
+            "int":1,
+            "wis":0,
+            "cha":2
+        }
+    }
+}
