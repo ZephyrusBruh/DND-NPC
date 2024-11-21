@@ -1,13 +1,15 @@
 var butttt = document.getElementById("butttton");
 var woah = document.getElementById("class");
 var nums= [document.getElementById("text1"), document.getElementById("text2"), document.getElementById("text3"),
-    document.getElementById("text4"), document.getElementById("text5"), document.getElementById("text6"), document.getElementById("text7")];
+    document.getElementById("text4"), document.getElementById("text5"), document.getElementById("text6")/*, document.getElementById("text7")*/];
 //const dots = document.getElementsByClassName("theDots");
 let dots = [document.getElementById("dot1"), document.getElementById("dot2"), document.getElementById("dot3"),
-     document.getElementById("dot4"), document.getElementById("dot5"), document.getElementById("dot6"), document.getElementById("dot7")];
-
+     document.getElementById("dot4"), document.getElementById("dot5"), document.getElementById("dot6")/*, document.getElementById("dot7")*/];
+let traits = [document.getElementById("str"), document.getElementById("dex"), document.getElementById("con"),
+    document.getElementById("int"), document.getElementById("wis"), document.getElementById("cha")]
 let className = document.getElementById("ClassName");
 let raceName = document.getElementById("RaceName");
+
 
 
 
@@ -50,4 +52,8 @@ function getRace(){
 function changeText(){
     className.innerText = getClass();
     raceName.innerText=getRace();
+    for(let i=0; i<traits.length; i++){
+        traits[i].innerText=nums[i].innerText;
+    }
+
 }
