@@ -2,6 +2,7 @@
 {
     "classes": {
         "Artificer":{
+            "name": "Artificer",
             "ac": 16,
             "hp": 8,
             "str":-1,
@@ -12,6 +13,7 @@
             "cha":0
         },
         "Barbarian":{
+            "name": "Barbarian",
             "ac": 14,
             "hp": 8,
             "str":3,
@@ -22,6 +24,7 @@
             "cha":1
         },
         "Bard": {
+            "name": "Bard",
             "ac": 13,
             "hp": 8,
             "str":0,
@@ -32,6 +35,7 @@
             "cha":3
         },
         "BloodHunter":{
+            "name": "Blood Hunter",
             "ac": 14,
             "hp": 8,
             "str":4,
@@ -42,6 +46,7 @@
             "cha":0
         },
         "Cleric":{
+            "name": "Cleric",
             "ac": 15,
             "hp": 8,
             "str":1,
@@ -52,6 +57,7 @@
             "cha":1
         },
         "Druid":{
+            "name": "Druid",
             "ac": 13,
             "hp": 8,
             "str":0,
@@ -62,6 +68,7 @@
             "cha":0
         },
         "Fighter":{
+            "name": "Fighter",
             "ac": 14,
             "hp": 10,
             "str":1,
@@ -72,6 +79,7 @@
             "cha":0
         },
         "Monk":{
+            "name": "Monk",
             "ac": 16,
             "hp": 8,
             "str":0,
@@ -82,6 +90,7 @@
             "cha":-1
         },
         "Paladin":{
+            "name": "Paladin",
             "ac": 16,
             "hp": 10,
             "str":3,
@@ -92,6 +101,7 @@
             "cha":2
         },
         "Ranger":{
+            "name": "Ranger",
             "ac": 14,
             "hp": 10,
             "str":0,
@@ -102,6 +112,7 @@
             "cha":0
         },
         "Rouge":{
+            "name": "Rouge",
             "ac": 14,
             "hp": 8,
             "str":0,
@@ -112,6 +123,7 @@
             "cha":2
         },
         "Sorcerer":{
+            "name": "Sorcerer",
             "ac": 12,
             "hp": 6,
             "str":-1,
@@ -122,6 +134,7 @@
             "cha":3
         },
         "Warlock":{
+            "name": "Warlock",
             "ac": 13,
             "hp": 8,
             "str":-1,
@@ -132,6 +145,7 @@
             "cha":3
         },
         "Wizard":{
+            "name": "Wizard",
             "ac": 12,
             "hp": 6,
             "str":-1,
@@ -145,6 +159,7 @@
     },
     "races":{
         "human":{
+            "name": "Human",
             "hp":1,
             "str":1,
             "dex":1,
@@ -154,6 +169,7 @@
             "cha":1
         },
         "halfling":{
+            "name": "Halfling",
             "hp": 0,
             "str":0,
             "dex":0,
@@ -163,6 +179,7 @@
             "cha":1
         },
         "dragonborn":{
+            "name": "Dragonborn",
             "hp":0,
             "str":2,
             "dex":0,
@@ -172,6 +189,7 @@
             "cha":1
         },
         "aarakocra":{
+            "name": "Aarakocra",
             "hp":0,
             "str":0,
             "dex":2,
@@ -181,6 +199,7 @@
             "cha":0
         },
         "deepGnome":{
+            "name": "Deep Gnome",
             "hp":0,
             "str":0,
             "dex":1,
@@ -190,6 +209,7 @@
             "cha":0
         },
         "rockGnome":{
+            "name": "Rock Gnome",
             "hp":0,
             "str":0,
             "dex":0,
@@ -199,6 +219,7 @@
             "cha":0
         },
         "airGenasi":{
+            "name": "Air Genasi",
             "hp":0,
             "str":0,
             "dex":1,
@@ -208,6 +229,7 @@
             "cha":0
         },
         "earthGenasi":{
+            "name": "Earth Genasi",
             "hp":0,
             "str":1,
             "dex":0,
@@ -217,6 +239,7 @@
             "cha":0
         },
         "fireGenasi":{
+            "name": "Fire Genasi",
             "hp":0,
             "str":0,
             "dex":0,
@@ -226,6 +249,7 @@
             "cha":0
         },
         "waterGenasi":{
+            "name": "Water Genasi",
             "hp":0,
             "str":0,
             "dex":0,
@@ -235,6 +259,7 @@
             "cha":0
         },
         "goliath":{
+            "name": "Goliath",
             "hp":0,
             "str":2,
             "dex":0,
@@ -244,6 +269,7 @@
             "cha":0
         },
         "hillDwarf":{
+            "name": "Hill Dwarf",
             "hp": 1,
             "str":0,
             "dex":0,
@@ -253,6 +279,7 @@
             "cha":0
         },
         "mountainDwarf":{
+            "name": "Mountain Dwarf",
             "hp": 0,
             "str":2,
             "dex":0,
@@ -262,6 +289,7 @@
             "cha":0
         },
         "highElf":{
+            "name": "High Elf",
             "hp": 0,
             "str":0,
             "dex":2,
@@ -271,6 +299,7 @@
             "cha":0
         },
         "woodElf":{
+            "name": "Wood Elf",
             "hp": 0,
             "str":0,
             "dex":2,
@@ -280,6 +309,7 @@
             "cha":0
         },
         "halfElf":{
+            "name": "Half-Elf",
             "hp": 0,
             "str":0,
             "dex":1,
@@ -289,6 +319,7 @@
             "cha":2
         },
         "halfOrc":{
+            "name": "Half-Orc",
             "hp": 0,
             "str":2,
             "dex":0,
@@ -298,6 +329,7 @@
             "cha":0
         },
         "tiefling":{
+            "name": "Tiefling",
             "hp": 0,
             "str":0,
             "dex":0,

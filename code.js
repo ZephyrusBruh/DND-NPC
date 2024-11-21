@@ -6,6 +6,11 @@ var nums= [document.getElementById("text1"), document.getElementById("text2"), d
 let dots = [document.getElementById("dot1"), document.getElementById("dot2"), document.getElementById("dot3"),
      document.getElementById("dot4"), document.getElementById("dot5"), document.getElementById("dot6"), document.getElementById("dot7")];
 
+let className = document.getElementById("ClassName");
+let raceName = document.getElementById("RaceName");
+
+
+
 let theJson = ('./info.json');
 
 fetch(theJson)
@@ -24,14 +29,25 @@ function rollDice(event){
         nums[i].innerText = getRand();
     }
     changeText();
-    
 }
 
 function getRand(){
     return Math.floor(Math.random() * 20) +1;
 }
+function getClass(){
+    var obj_keys = Object.keys(theJson.classes);
+    var ran_key = obj_keys[Math.floor(Math.random() *obj_keys.length)];
+    theJson.selectedclass = theJson.classes[ran_key];
+    return theJson.selectedclass.name;
+}
+function getRace(){
+    var obj_keys = Object.keys(theJson.races);
+    var ran_key = obj_keys[Math.floor(Math.random() *obj_keys.length)];
+    theJson.selectedrace = theJson.races[ran_key];
+    return theJson.selectedrace.name;
+}
 
 function changeText(){
-    console.log(theJson.classes);
-    
+    className.innerText = getClass();
+    raceName.innerText=getRace();
 }
