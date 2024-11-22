@@ -11,6 +11,8 @@ let className = document.getElementById("ClassName");
 let raceName = document.getElementById("RaceName");
 let acText = document.getElementById("ac");
 let hpText = document.getElementById("hp");
+let modstext =[document.getElementById("modstr"),document.getElementById("moddex"),document.getElementById("modcon"),
+    document.getElementById("modint"),document.getElementById("modwis"),document.getElementById("modcha")];
 
 
 
@@ -61,10 +63,45 @@ function changeText(){
     for(let i=0; i<traits.length; i++){
         traits[i].innerText=nums[i].innerText;
     }
+    getMods(selectedclass,selectedrace);
 }
 
 function getHP(hpClass, hpRace, conRace, conClass){
     var cons = hpClass + hpRace + conRace + conClass;
     return cons;
 }
+function getMods(selectedclass,selectedrace){
+    if(selectedclass.str + selectedrace.str >= 0){
+        modstext[0].innerText = "+" + (selectedclass.str + selectedrace.str);
+    } else {
+        modstext[0].innerText = (selectedclass.str + selectedrace.str);
+    }
+    if(selectedclass.dex + selectedrace.dex >= 0){
+        modstext[1].innerText = "+" + (selectedclass.dex + selectedrace.dex);
+    } else {
+        modstext[1].innerText = (selectedclass.dex + selectedrace.dex);
+    }
+    if(selectedclass.con + selectedrace.con >= 0){
+        modstext[2].innerText = "+" + (selectedclass.con + selectedrace.con);
+    } else {
+        modstext[2].innerText = (selectedclass.con + selectedrace.con);
+    }
+    if(selectedclass.int + selectedrace.int >= 0){
+        modstext[3].innerText = "+" + (selectedclass.int + selectedrace.int);
+    } else {
+        modstext[3].innerText = (selectedclass.int + selectedrace.int);
+    }
+    if(selectedclass.wis + selectedrace.wis >= 0){
+        modstext[4].innerText = "+" + (selectedclass.wis + selectedrace.wis);
+    } else {
+        modstext[4].innerText = (selectedclass.con + selectedrace.con);
+    }
+    if(selectedclass.cha + selectedrace.cha >= 0){
+        modstext[5].innerText = "+" + (selectedclass.cha + selectedrace.cha);
+    } else {
+        modstext[5].innerText = (selectedclass.cha + selectedrace.cha);
+    }
+    
+}
+
  

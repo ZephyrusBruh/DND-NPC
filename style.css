@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     background-color: #C44E4E;
+    font-family:"Courier New", monospace;
 }
 
 .theDie{
@@ -130,6 +131,7 @@ button:hover{
 
 }
 .indTraits{
+    font-size: 13px;
     margin: 8px;
     width: 100px;
     height: 100px;
@@ -138,6 +140,8 @@ button:hover{
     border-width: 2px;
     border-radius: 10px;
 }
+
+
 
 
 footer{
