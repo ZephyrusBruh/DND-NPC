@@ -9,6 +9,8 @@ let traits = [document.getElementById("str"), document.getElementById("dex"), do
     document.getElementById("int"), document.getElementById("wis"), document.getElementById("cha")]
 let className = document.getElementById("ClassName");
 let raceName = document.getElementById("RaceName");
+let acText = document.getElementById("ac");
+let hpText = document.getElementById("hp");
 
 
 
@@ -40,20 +42,29 @@ function getClass(){
     var obj_keys = Object.keys(theJson.classes);
     var ran_key = obj_keys[Math.floor(Math.random() *obj_keys.length)];
     theJson.selectedclass = theJson.classes[ran_key];
-    return theJson.selectedclass.name;
+    return theJson.selectedclass;
 }
 function getRace(){
     var obj_keys = Object.keys(theJson.races);
     var ran_key = obj_keys[Math.floor(Math.random() *obj_keys.length)];
     theJson.selectedrace = theJson.races[ran_key];
-    return theJson.selectedrace.name;
+    return theJson.selectedrace;
 }
 
 function changeText(){
-    className.innerText = getClass();
-    raceName.innerText=getRace();
+    let selectedclass = getClass();
+    let selectedrace = getRace();
+    className.innerText = selectedclass.name;
+    raceName.innerText = selectedrace.name;
+    acText.innerText = selectedclass.ac;
+    hpText.innerText = getHP(selectedclass.hp, selectedrace.hp,selectedclass.con, selectedrace.con)
     for(let i=0; i<traits.length; i++){
         traits[i].innerText=nums[i].innerText;
     }
-
 }
+
+function getHP(hpClass, hpRace, conRace, conClass){
+    var cons = hpClass + hpRace + conRace + conClass;
+    return cons;
+}
+ 
