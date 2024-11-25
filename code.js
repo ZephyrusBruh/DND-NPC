@@ -38,7 +38,7 @@ function rollDice(event){
 }
 
 function getRand(){
-    return Math.floor(Math.random() * 20) +1;
+    return Math.floor(Math.random() * 15) +5;
 }
 function getClass(){
     var obj_keys = Object.keys(theJson.classes);
@@ -63,43 +63,43 @@ function changeText(){
     for(let i=0; i<traits.length; i++){
         traits[i].innerText=nums[i].innerText;
     }
-    getMods(selectedclass,selectedrace);
+    getMods(selectedrace);
 }
 
 function getHP(hpClass, hpRace, conRace, conClass){
     var cons = hpClass + hpRace + conRace + conClass;
     return cons;
 }
-function getMods(selectedclass,selectedrace){
-    if(selectedclass.str + selectedrace.str >= 0){
-        modstext[0].innerText = "+" + (selectedclass.str + selectedrace.str);
+function getMods(selectedrace){
+    if(((traits[0].innerText- 10)/2) + selectedrace.str >= 0){
+        modstext[0].innerText = "+" + Math.floor((((traits[0].innerText- 10)/2))+ selectedrace.str);
     } else {
-        modstext[0].innerText = (selectedclass.str + selectedrace.str);
+        modstext[0].innerText = Math.floor((((traits[0].innerText- 10)/2) + selectedrace.str));
     }
-    if(selectedclass.dex + selectedrace.dex >= 0){
-        modstext[1].innerText = "+" + (selectedclass.dex + selectedrace.dex);
+    if(((traits[1].innerText- 10)/2) + selectedrace.dex >= 0){
+        modstext[1].innerText = "+" + Math.floor((((traits[1].innerText- 10)/2) + selectedrace.dex));
     } else {
-        modstext[1].innerText = (selectedclass.dex + selectedrace.dex);
+        modstext[1].innerText = Math.floor((((traits[1].innerText- 10)/2) + selectedrace.dex));
     }
-    if(selectedclass.con + selectedrace.con >= 0){
-        modstext[2].innerText = "+" + (selectedclass.con + selectedrace.con);
+    if(((traits[2].innerText- 10)/2) + selectedrace.con >= 0){
+        modstext[2].innerText = "+" + Math.floor(((traits[2].innerText- 10)/2)+ selectedrace.con);
     } else {
-        modstext[2].innerText = (selectedclass.con + selectedrace.con);
+        modstext[2].innerText = Math.floor(((traits[2].innerText- 10)/2) + selectedrace.con);
     }
-    if(selectedclass.int + selectedrace.int >= 0){
-        modstext[3].innerText = "+" + (selectedclass.int + selectedrace.int);
+    if(((traits[3].innerText- 10)/2) + selectedrace.int >= 0){
+        modstext[3].innerText = "+" + Math.floor(((traits[3].innerText- 10)/2) + selectedrace.int);
     } else {
-        modstext[3].innerText = (selectedclass.int + selectedrace.int);
+        modstext[3].innerText = Math.floor(((traits[3].innerText- 10)/2) + selectedrace.int);
     }
-    if(selectedclass.wis + selectedrace.wis >= 0){
-        modstext[4].innerText = "+" + (selectedclass.wis + selectedrace.wis);
+    if(((traits[4].innerText- 10)/2) + selectedrace.wis >= 0){
+        modstext[4].innerText = "+" + Math.floor(((traits[4].innerText- 10)/2) + selectedrace.wis);
     } else {
-        modstext[4].innerText = (selectedclass.con + selectedrace.con);
+        modstext[4].innerText = Math.floor(((traits[4].innerText- 10)/2) + selectedrace.con);
     }
-    if(selectedclass.cha + selectedrace.cha >= 0){
-        modstext[5].innerText = "+" + (selectedclass.cha + selectedrace.cha);
+    if(((traits[4].innerText- 10)/2) + selectedrace.cha >= 0){
+        modstext[5].innerText = "+" + Math.floor(((traits[4].innerText- 10)/2)+ selectedrace.cha);
     } else {
-        modstext[5].innerText = (selectedclass.cha + selectedrace.cha);
+        modstext[5].innerText = Math.floor(((traits[4].innerText- 10)/2) + selectedrace.cha);
     }
     
 }

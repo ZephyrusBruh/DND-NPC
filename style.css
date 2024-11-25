@@ -58,6 +58,9 @@ h1{
     align-content: center;
     justify-content: center;
 }
+.butt > p {
+    font-weight: bold;
+}
 
 .theDots{
     height: 25px;
